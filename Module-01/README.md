@@ -95,3 +95,56 @@ Here are some key components and concepts associated with MLOps:
 By adopting MLOps practices, organizations can enhance the efficiency, scalability, and reliability of their ML deployments. It promotes a systematic approach to managing ML models, accelerates time to market, and facilitates collaboration between different stakeholders involved in ML development and deployment.
 
 ## 1.2 Environment preparation
+
+
+### Step 1
+Download and install the Anaconda distribution of Python
+```
+wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
+bash Anaconda3-2022.05-Linux-x86_64.sh
+```
+### Step 2
+Update existing packages
+```
+sudo apt update
+```
+### Step 3
+Install Docker
+```
+sudo apt install docker.io
+```
+### Step 4
+Create a separate directory for the installation
+```
+mkdir soft
+cd soft
+```
+To get the latest release of Docker Compose, go to https://github.com/docker/compose and download the release for your OS.
+```
+wget https://github.com/docker/compose/releases/download/v2.18.0/docker-compose-linux-x86_64 -O docker-compose
+```
+Make it executable
+```
+chmod +x docker-compose
+```
+Add to the soft directory to PATH. Open the .bashrc file with nano:
+```
+nano ~/.bashrc
+```
+In .bashrc, add the following line:
+```
+export PATH="${HOME}/soft:${PATH}"
+```
+
+nano.PNG
+Save it using ctrl + O , hit enter at the File Name to Write prompt, and then exit using ctrl + Z
+
+Run the following to make sure the changes are applied:
+```
+source ~/.bashrc
+```
+### Step 5
+Run Docker
+```
+docker run hello-world
+```

@@ -67,3 +67,31 @@ $ sudo usermod -aG docker $USER
 ```sh
 $ docker run hello-world
 ```
+
+## ⚙ Dataset
+
+## 1.1 What is MLOps
+
+**MLOps**, short for Machine Learning Operations, refers to the practices, methodologies, and tools used to streamline and operationalize the lifecycle of machine learning (ML) models. It aims to bridge the gap between data scientists, who develop and train models, and production environments, where models are deployed and maintained.
+
+Traditionally, the development and deployment of ML models have been treated as separate stages, leading to challenges when transitioning from experimentation to production. MLOps seeks to address these challenges by introducing a set of best practices for managing ML workflows, collaboration, and automation.
+
+Here are some key components and concepts associated with MLOps:
+
+**Version control**: Applying version control systems (e.g., Git) to ML models, code, and data, enabling easy tracking of changes and reproducibility.
+
+**Automation and orchestration**: Using automation tools to streamline repetitive tasks, such as data preprocessing, model training, evaluation, and deployment. Orchestration frameworks, like Kubeflow or Apache Airflow, help manage complex workflows.
+
+**Continuous Integration and Continuous Deployment (CI/CD)**: Adapting CI/CD principles from software development to ML, allowing for frequent and automated model updates and deployments.
+
+**Infrastructure and environment management**: Utilizing tools like Docker and Kubernetes to containerize ML models and manage scalable and reproducible environments across different stages, from development to production.
+
+**Model monitoring and management**: Implementing monitoring solutions to track model performance, detect anomalies, and ensure models remain effective over time. This includes logging relevant metrics and retraining models when necessary.
+
+**Collaboration and reproducibility**: Establishing practices for sharing code, data, and experiment results, enabling collaboration among data scientists and ensuring reproducibility of ML workflows.
+
+**Governance and compliance**: Addressing ethical and legal considerations, such as data privacy, bias mitigation, and regulatory compliance, throughout the ML lifecycle.
+
+By adopting MLOps practices, organizations can enhance the efficiency, scalability, and reliability of their ML deployments. It promotes a systematic approach to managing ML models, accelerates time to market, and facilitates collaboration between different stakeholders involved in ML development and deployment.
+
+## 1.2 Environment preparation

@@ -11,3 +11,6 @@ Module 4: Model Deployment<br>
 Module 5: Model Monitoring<br>
 Module 6: Best Practices<br>
 Module 7, 8, 9: Implementing Project<br>
+
+<image src="./images/image2.png" alt="mlops-demo"/>
+
